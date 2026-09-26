@@ -1,24 +1,28 @@
 class LlmDash < Formula
   desc "See what your LLM API calls cost: live terminal dashboard for spend and budget"
-  homepage "https://github.com/Mattbusel/llm-cost-dashboard"
-  version "1.2.1"
+  homepage "https://mattbusel.github.io/llm-cost-dashboard/"
+  version "1.2.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Mattbusel/llm-cost-dashboard/releases/download/v1.2.1/llm-cost-dashboard-v1.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "9855fd710ee4b3d6d9b6dc3b974a2dd92667f4e9e55ad57d06ec4903bb4fd78a"
+      url "https://github.com/Mattbusel/llm-cost-dashboard/releases/download/v1.2.2/llm-cost-dashboard-v1.2.2-aarch64-apple-darwin.tar.gz"
+      sha256 "d8d5bb4fa4aa204923fd70e278a1c0f557120c01d272af8e3b86dfec5131425a"
     end
     on_intel do
-      url "https://github.com/Mattbusel/llm-cost-dashboard/releases/download/v1.2.1/llm-cost-dashboard-v1.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "3f2afa0788c363d2289ee062ce230b3288291ddafef1ed79a3353f5f855c7359"
+      url "https://github.com/Mattbusel/llm-cost-dashboard/releases/download/v1.2.2/llm-cost-dashboard-v1.2.2-x86_64-apple-darwin.tar.gz"
+      sha256 "1b680c06a2fc85a0a4ac95117322047e31ea1ba0d119e338f97317db5b13d9d4"
     end
   end
 
   on_linux do
+    on_arm do
+      url "https://github.com/Mattbusel/llm-cost-dashboard/releases/download/v1.2.2/llm-cost-dashboard-v1.2.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "18c2dd8ccdaddec6eff492920c7bcdf51233de7de363cb509832a662d01d6332"
+    end
     on_intel do
-      url "https://github.com/Mattbusel/llm-cost-dashboard/releases/download/v1.2.1/llm-cost-dashboard-v1.2.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d5286455614e41013045ba9d9afba1271988bea4d459b3812c8b7580f68d82c3"
+      url "https://github.com/Mattbusel/llm-cost-dashboard/releases/download/v1.2.2/llm-cost-dashboard-v1.2.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3b513cdf590660c417deaf6d8e7bed6da3d189eb06c141cf26e321e9b0a2c813"
     end
   end
 
