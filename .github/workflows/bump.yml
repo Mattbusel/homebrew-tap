@@ -1,0 +1,29 @@
+name: bump
+# Every day, and on demand: move each of the formulas to its project's latest GitHub release
+# (sha256 from the release's SHA256SUMS.txt). A release that lacks any asset a file uses is
+# skipped, so an install never points at a missing binary.
+on:
+  schedule:
+    - cron: '41 7 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: update to the latest releases
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/bump.py
+      - name: commit
+        run: |
+          if git diff --quiet; then echo "nothing to update"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Update to the latest releases: $(git diff --name-only | xargs -n1 basename | sed 's/\.[a-z]*$//' | paste -sd, -)"
+          git push

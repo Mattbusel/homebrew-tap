@@ -1,24 +1,24 @@
 class ChaosRpg < Formula
   desc "Roguelike where every roll is a chain of real math (Lorenz, Mandelbrot, Collatz)"
   homepage "https://github.com/Mattbusel/chaos-rpg"
-  version "2.2.1"
+  version "2.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Mattbusel/chaos-rpg/releases/download/v2.2.1/chaos-rpg-v2.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "b9de5a3fb9b636430639aaf3d1505f1e43b1ade465aaf447ea737824c40b7b39"
+      url "https://github.com/Mattbusel/chaos-rpg/releases/download/v2.3.0/chaos-rpg-v2.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "bfebb5f3cf19b34cf7692607e3f142a2086def45a409ceb9c138a9f19a7a08e2"
     end
     on_intel do
-      url "https://github.com/Mattbusel/chaos-rpg/releases/download/v2.2.1/chaos-rpg-v2.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "0d922022c28a549e89683a62e9f037abed2f1c030a1cee611d619100315538c1"
+      url "https://github.com/Mattbusel/chaos-rpg/releases/download/v2.3.0/chaos-rpg-v2.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "afa407cee2d59c619b00b7f2d4cdd329c2cb1d9533fb12d9f1a40fb3fb5e470c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Mattbusel/chaos-rpg/releases/download/v2.2.1/chaos-rpg-v2.2.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1eeff40b717044a84b766b9c6841f45f26a29e28c4392f69d813ca829c53af4c"
+      url "https://github.com/Mattbusel/chaos-rpg/releases/download/v2.3.0/chaos-rpg-v2.3.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "332098c07739b624e062eedf5b6a0e097927d692b97fa3d82583431968a56789"
     end
   end
 
