@@ -1,24 +1,24 @@
 class TokioPromptOrchestrator < Formula
   desc "Queue, dedup and circuit breaker in front of LLM APIs (orchestrator server)"
   homepage "https://github.com/Mattbusel/tokio-prompt-orchestrator"
-  version "2.4.3"
+  version "2.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Mattbusel/tokio-prompt-orchestrator/releases/download/v2.4.3/orchestrator-v2.4.3-aarch64-apple-darwin.tar.gz"
-      sha256 "567ec1fc22ca0c211f4ff7eed83112898ff441e953ac3075a11f2cbca21cbfb2"
+      url "https://github.com/Mattbusel/tokio-prompt-orchestrator/releases/download/v2.5.1/orchestrator-v2.5.1-aarch64-apple-darwin.tar.gz"
+      sha256 "18067a051b5989613111ada0a96e91877e2375d7256c74502638baa22f15727a"
     end
     on_intel do
-      url "https://github.com/Mattbusel/tokio-prompt-orchestrator/releases/download/v2.4.3/orchestrator-v2.4.3-x86_64-apple-darwin.tar.gz"
-      sha256 "89d5fdfae67805a1daefcd5cdbe41c452676978736810269069daffb8ee47945"
+      url "https://github.com/Mattbusel/tokio-prompt-orchestrator/releases/download/v2.5.1/orchestrator-v2.5.1-x86_64-apple-darwin.tar.gz"
+      sha256 "774313ac8b497a5d87c8eb2ce989196f6ee94e799f9c6db20b924430fcfbc632"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Mattbusel/tokio-prompt-orchestrator/releases/download/v2.4.3/orchestrator-v2.4.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d76aefbec7283cb5f8aa60a2fc393a73c7f2495510b2284023255c79cbc9d592"
+      url "https://github.com/Mattbusel/tokio-prompt-orchestrator/releases/download/v2.5.1/orchestrator-v2.5.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c1b9157a63babc2b5b6ecf7b2ab5d7f4542c0b1a06926f39fd09b25b4135fd11"
     end
   end
 
