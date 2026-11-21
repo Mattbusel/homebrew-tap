@@ -1,24 +1,24 @@
 class LlmBench < Formula
   desc "Compare LLM models on p50/p99 latency, tokens per second and cost in one table"
   homepage "https://github.com/Mattbusel/llm-bench"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Mattbusel/llm-bench/releases/download/v0.4.1/llm-bench-v0.4.1-aarch64-apple-darwin.tar.gz"
-      sha256 "4bb40e27c72d8304b813c6b10b9450930fc5dee74d258224893cb718118c0bdd"
+      url "https://github.com/Mattbusel/llm-bench/releases/download/v0.4.2/llm-bench-v0.4.2-aarch64-apple-darwin.tar.gz"
+      sha256 "8a0bc1e57651f90794a827f0331b2588d1fd250314cbc6a1ddcfd8d4b9d5bc94"
     end
     on_intel do
-      url "https://github.com/Mattbusel/llm-bench/releases/download/v0.4.1/llm-bench-v0.4.1-x86_64-apple-darwin.tar.gz"
-      sha256 "d508a874be916017a32fcd51a9dea434a29afab17076e8c4fdf31f645195fa06"
+      url "https://github.com/Mattbusel/llm-bench/releases/download/v0.4.2/llm-bench-v0.4.2-x86_64-apple-darwin.tar.gz"
+      sha256 "06e8ce1d06a11a230aa345cc57a99275656301c02c6ba902355846aa98ad3d6f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Mattbusel/llm-bench/releases/download/v0.4.1/llm-bench-v0.4.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5003d5f7e8b19e2e321630963f611053e5ed5f9d907d0082419b0ef07755e505"
+      url "https://github.com/Mattbusel/llm-bench/releases/download/v0.4.2/llm-bench-v0.4.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "50b27c94b46d1e2fe7f82aafbe68eb19f2cf37cde763291b76ebfbc9bb410d2c"
     end
   end
 
